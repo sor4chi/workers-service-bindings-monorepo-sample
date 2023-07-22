@@ -1,2 +1,5 @@
-name = "my-app"
+name = "gateway"
 compatibility_date = "2023-01-01"
+
+[dev]
+port = 1234
