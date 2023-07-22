@@ -1,6 +1,10 @@
 import { Hono } from 'hono'
 
-const app = new Hono()
+type Bindings = {
+  PRIVATE_SERVICE: Fetcher;
+};
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 app.get('/', (c) => c.text('Hello Hono!'))
 

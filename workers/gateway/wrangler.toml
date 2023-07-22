@@ -1,5 +1,8 @@
 name = "gateway"
 compatibility_date = "2023-01-01"
+services = [
+    { binding = "PRIVATE_SERVICE", service = "private-service" }
+]
 
 [dev]
 port = 1234
