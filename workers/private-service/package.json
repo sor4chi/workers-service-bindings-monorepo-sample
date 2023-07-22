@@ -1,0 +1,13 @@
+{
+  "name": "private-service",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.3.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230628.0"
+  }
+}
